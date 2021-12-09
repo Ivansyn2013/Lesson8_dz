@@ -14,13 +14,16 @@
 import sys
 import re
 
+
 def email_parse(argv):
     print(sys.argv[1])
     result_dict = {}
 
-    result_dict = {'username':re.split(r'[@\.]', sys.argv[1])[0],'domain':re.split(r'[@\.]', sys.argv[1])[1]}
+    result_dict = {'username': re.split(r'[@\.]', sys.argv[1])[0], 'domain': re.split(r'[@\.]', sys.argv[1])[1]}
 
     print(result_dict)
 
-    #print (re.split(r'[@\.]', sys.argv[1]) , re.search(r'@\w\.',sys.argv[1]))
+    # print (re.split(r'[@\.]', sys.argv[1]) , re.search(r'@\w\.',sys.argv[1]))
+
+
 email_parse(sys.argv[1])
